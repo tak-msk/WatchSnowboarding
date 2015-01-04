@@ -15,6 +15,12 @@ class VideoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var nav = self.navigationController?.navigationBar
+        
+        nav?.tintColor = UIColor.whiteColor()
+        nav?.barTintColor = UIColor(red: 0, green: 0.75, blue: 1.0, alpha: 1.0)
+        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
 
         // Do any additional setup after loading the view.
     }
@@ -27,7 +33,7 @@ class VideoViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        //self.webView.loadYoutubeWithVideoID(selectedVideoID!)
+        self.webView.loadYoutubeWithVideoID(selectedVideoID!)
     }
 
     /*
