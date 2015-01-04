@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="mQc-3u-ze4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Boaders-->
+        <scene sceneID="wC7-Gp-aCW">
+            <objects>
+                <viewController id="j41-Mu-jZd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nJ4-ED-P7v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Boaders" id="TsB-G1-9wM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEP-pN-UG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156.80000000000001" y="-21.773333333333333"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Ak2-Hl-VGJ">
+            <objects>
+                <tabBarController id="mQc-3u-ze4" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KBH-wu-ibv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EX1-vY-yGR" kind="relationship" relationship="viewControllers" id="L7P-rR-kvy"/>
+                        <segue destination="j41-Mu-jZd" kind="relationship" relationship="viewControllers" id="PgT-Ql-FlY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLs-kD-Z5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-594.13333333333333" y="-335.12"/>
+        </scene>
+        <!--All Videos-->
+        <scene sceneID="dSJ-V7-MPn">
+            <objects>
+                <tableViewController id="2Zc-QS-hal" customClass="AllMovieViewController" customModule="WatchSnowboarding" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="7MF-JO-zKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="80" id="9Og-EQ-iMF" customClass="AllVideoCell" customModule="WatchSnowboarding" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Og-EQ-iMF" id="S99-YC-Lye">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DXb-7X-tEV">
+                                            <rect key="frame" x="103" y="8" width="171" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WXX-yB-AK3">
+                                            <rect key="frame" x="103" y="37" width="171" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PublishedAt" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="293-HH-A0F">
+                                            <rect key="frame" x="103" y="52" width="171" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="lRG-Wg-aML">
+                                            <rect key="frame" x="8" y="8" width="87" height="65"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="videoDuration" destination="WXX-yB-AK3" id="wt8-8Q-mgO"/>
+                                    <outlet property="videoImage" destination="lRG-Wg-aML" id="hb3-Dz-0lm"/>
+                                    <outlet property="videoPublished" destination="293-HH-A0F" id="N62-hM-d4w"/>
+                                    <outlet property="videoTitle" destination="DXb-7X-tEV" id="TLB-xN-Qe1"/>
+                                    <segue destination="i5p-gl-ysU" kind="modal" identifier="SelectVideo" id="2ZL-Ub-dV2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2Zc-QS-hal" id="N3N-Jq-LXf"/>
+                            <outlet property="delegate" destination="2Zc-QS-hal" id="62v-6A-0WV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="All Videos" id="Adp-1P-Eoj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RlV-QS-hgE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="-641"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ATJ-kO-8oZ">
+            <objects>
+                <navigationController id="i5p-gl-ysU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8za-vL-YtY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gFb-97-ozW" kind="relationship" relationship="rootViewController" id="yBt-li-AAR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UrR-G8-KJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="645" y="-641"/>
+        </scene>
+        <!--Watch Video-->
+        <scene sceneID="KNV-hH-6Hw">
+            <objects>
+                <viewController id="gFb-97-ozW" customClass="VideoViewController" customModule="WatchSnowboarding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZV8-QT-CNp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="ExI-Ir-s1f">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Watch Video" id="dTo-Xo-nlz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="0He-79-rgQ">
+                            <connections>
+                                <segue destination="P6r-3o-yZ3" kind="unwind" unwindAction="closeVideoScene:" id="O1t-Wn-UvA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="ExI-Ir-s1f" id="jYm-aF-8C3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yBc-7o-4RK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="P6r-3o-yZ3" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="-641"/>
+        </scene>
+        <!--All-->
+        <scene sceneID="B6s-hh-xFM">
+            <objects>
+                <navigationController id="EX1-vY-yGR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="All" id="O7q-1V-yGf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8mT-PA-rop">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2Zc-QS-hal" kind="relationship" relationship="rootViewController" id="2dZ-9R-XCV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ar-fZ-wty" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-157" y="-641"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B2A64A91A58E78C0069905E /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A64A81A58E78C0069905E /* VideoViewController.swift */; };
+		3B2A64AD1A5900210069905E /* ExYoutubeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A64AC1A5900210069905E /* ExYoutubeLoader.swift */; };
+		3B2A64B31A594E330069905E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A64B11A594E330069905E /* Main.storyboard */; };
+		3B556C571A57DC5100DE807B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C561A57DC5100DE807B /* AppDelegate.swift */; };
+		3B556C591A57DC5100DE807B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C581A57DC5100DE807B /* ViewController.swift */; };
+		3B556C5E1A57DC5100DE807B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B556C5D1A57DC5100DE807B /* Images.xcassets */; };
+		3B556C611A57DC5100DE807B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B556C5F1A57DC5100DE807B /* LaunchScreen.xib */; };
+		3B556C6D1A57DC5100DE807B /* WatchSnowboardingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C6C1A57DC5100DE807B /* WatchSnowboardingTests.swift */; };
+		3B556C771A57DF9600DE807B /* AllMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C761A57DF9600DE807B /* AllMovieViewController.swift */; };
+		3B556C7B1A57DFF300DE807B /* getVideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C7A1A57DFF300DE807B /* getVideoInfo.swift */; };
+		3B556C7D1A57E39100DE807B /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C7C1A57E39100DE807B /* Video.swift */; };
+		3B556C7F1A57F0A400DE807B /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C7E1A57F0A400DE807B /* NetworkUtil.swift */; };
+		3B556C861A57F89D00DE807B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B556C851A57F89D00DE807B /* SystemConfiguration.framework */; };
+		3B556C891A57F8F900DE807B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C881A57F8F900DE807B /* Reachability.m */; };
+		3B556C8B1A5827C900DE807B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C8A1A5827C900DE807B /* SwiftyJSON.swift */; };
+		3B556C911A58AD8400DE807B /* AllVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C901A58AD8400DE807B /* AllVideoCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B556C671A57DC5100DE807B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B556C491A57DC5100DE807B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B556C501A57DC5100DE807B;
+			remoteInfo = WatchSnowboarding;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B2A64A81A58E78C0069905E /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		3B2A64AC1A5900210069905E /* ExYoutubeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExYoutubeLoader.swift; sourceTree = "<group>"; };
+		3B2A64B21A594E330069905E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B556C511A57DC5100DE807B /* WatchSnowboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchSnowboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B556C551A57DC5100DE807B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B556C561A57DC5100DE807B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B556C581A57DC5100DE807B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B556C5D1A57DC5100DE807B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3B556C601A57DC5100DE807B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3B556C661A57DC5100DE807B /* WatchSnowboardingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchSnowboardingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B556C6B1A57DC5100DE807B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B556C6C1A57DC5100DE807B /* WatchSnowboardingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSnowboardingTests.swift; sourceTree = "<group>"; };
+		3B556C761A57DF9600DE807B /* AllMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllMovieViewController.swift; sourceTree = "<group>"; };
+		3B556C7A1A57DFF300DE807B /* getVideoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getVideoInfo.swift; sourceTree = "<group>"; };
+		3B556C7C1A57E39100DE807B /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		3B556C7E1A57F0A400DE807B /* NetworkUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
+		3B556C811A57F16300DE807B /* WatchSnowboarding-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WatchSnowboarding-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B556C851A57F89D00DE807B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3B556C871A57F8F900DE807B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3B556C881A57F8F900DE807B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3B556C8A1A5827C900DE807B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		3B556C901A58AD8400DE807B /* AllVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllVideoCell.swift; path = ../AllVideoCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B556C4E1A57DC5100DE807B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B556C861A57F89D00DE807B /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B556C631A57DC5100DE807B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B2A64AE1A5900B40069905E /* VideoView */ = {
+			isa = PBXGroup;
+			children = (
+				3B2A64A81A58E78C0069905E /* VideoViewController.swift */,
+				3B2A64AC1A5900210069905E /* ExYoutubeLoader.swift */,
+			);
+			name = VideoView;
+			sourceTree = "<group>";
+		};
+		3B556C481A57DC5100DE807B = {
+			isa = PBXGroup;
+			children = (
+				3B556C851A57F89D00DE807B /* SystemConfiguration.framework */,
+				3B556C531A57DC5100DE807B /* WatchSnowboarding */,
+				3B556C691A57DC5100DE807B /* WatchSnowboardingTests */,
+				3B556C521A57DC5100DE807B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B556C521A57DC5100DE807B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B556C511A57DC5100DE807B /* WatchSnowboarding.app */,
+				3B556C661A57DC5100DE807B /* WatchSnowboardingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B556C531A57DC5100DE807B /* WatchSnowboarding */ = {
+			isa = PBXGroup;
+			children = (
+				3B2A64AE1A5900B40069905E /* VideoView */,
+				3B556C841A57F18900DE807B /* Reachability */,
+				3B556C791A57DFBA00DE807B /* FavoriteMovie */,
+				3B556C781A57DFA500DE807B /* AllMovieList */,
+				3B556C561A57DC5100DE807B /* AppDelegate.swift */,
+				3B556C581A57DC5100DE807B /* ViewController.swift */,
+				3B556C7A1A57DFF300DE807B /* getVideoInfo.swift */,
+				3B556C7E1A57F0A400DE807B /* NetworkUtil.swift */,
+				3B556C8A1A5827C900DE807B /* SwiftyJSON.swift */,
+				3B556C811A57F16300DE807B /* WatchSnowboarding-Bridging-Header.h */,
+				3B2A64B11A594E330069905E /* Main.storyboard */,
+				3B556C5D1A57DC5100DE807B /* Images.xcassets */,
+				3B556C5F1A57DC5100DE807B /* LaunchScreen.xib */,
+				3B556C541A57DC5100DE807B /* Supporting Files */,
+			);
+			path = WatchSnowboarding;
+			sourceTree = "<group>";
+		};
+		3B556C541A57DC5100DE807B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B556C551A57DC5100DE807B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B556C691A57DC5100DE807B /* WatchSnowboardingTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B556C6C1A57DC5100DE807B /* WatchSnowboardingTests.swift */,
+				3B556C6A1A57DC5100DE807B /* Supporting Files */,
+			);
+			path = WatchSnowboardingTests;
+			sourceTree = "<group>";
+		};
+		3B556C6A1A57DC5100DE807B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B556C6B1A57DC5100DE807B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B556C781A57DFA500DE807B /* AllMovieList */ = {
+			isa = PBXGroup;
+			children = (
+				3B556C761A57DF9600DE807B /* AllMovieViewController.swift */,
+				3B556C7C1A57E39100DE807B /* Video.swift */,
+				3B556C901A58AD8400DE807B /* AllVideoCell.swift */,
+			);
+			name = AllMovieList;
+			sourceTree = "<group>";
+		};
+		3B556C791A57DFBA00DE807B /* FavoriteMovie */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = FavoriteMovie;
+			sourceTree = "<group>";
+		};
+		3B556C841A57F18900DE807B /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				3B556C871A57F8F900DE807B /* Reachability.h */,
+				3B556C881A57F8F900DE807B /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B556C501A57DC5100DE807B /* WatchSnowboarding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B556C701A57DC5100DE807B /* Build configuration list for PBXNativeTarget "WatchSnowboarding" */;
+			buildPhases = (
+				3B556C4D1A57DC5100DE807B /* Sources */,
+				3B556C4E1A57DC5100DE807B /* Frameworks */,
+				3B556C4F1A57DC5100DE807B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchSnowboarding;
+			productName = WatchSnowboarding;
+			productReference = 3B556C511A57DC5100DE807B /* WatchSnowboarding.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B556C651A57DC5100DE807B /* WatchSnowboardingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B556C731A57DC5100DE807B /* Build configuration list for PBXNativeTarget "WatchSnowboardingTests" */;
+			buildPhases = (
+				3B556C621A57DC5100DE807B /* Sources */,
+				3B556C631A57DC5100DE807B /* Frameworks */,
+				3B556C641A57DC5100DE807B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B556C681A57DC5100DE807B /* PBXTargetDependency */,
+			);
+			name = WatchSnowboardingTests;
+			productName = WatchSnowboardingTests;
+			productReference = 3B556C661A57DC5100DE807B /* WatchSnowboardingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B556C491A57DC5100DE807B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Takahiro Masaki";
+				TargetAttributes = {
+					3B556C501A57DC5100DE807B = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3B556C651A57DC5100DE807B = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3B556C501A57DC5100DE807B;
+					};
+				};
+			};
+			buildConfigurationList = 3B556C4C1A57DC5100DE807B /* Build configuration list for PBXProject "WatchSnowboarding" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B556C481A57DC5100DE807B;
+			productRefGroup = 3B556C521A57DC5100DE807B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B556C501A57DC5100DE807B /* WatchSnowboarding */,
+				3B556C651A57DC5100DE807B /* WatchSnowboardingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B556C4F1A57DC5100DE807B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2A64B31A594E330069905E /* Main.storyboard in Resources */,
+				3B556C611A57DC5100DE807B /* LaunchScreen.xib in Resources */,
+				3B556C5E1A57DC5100DE807B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B556C641A57DC5100DE807B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B556C4D1A57DC5100DE807B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2A64A91A58E78C0069905E /* VideoViewController.swift in Sources */,
+				3B2A64AD1A5900210069905E /* ExYoutubeLoader.swift in Sources */,
+				3B556C771A57DF9600DE807B /* AllMovieViewController.swift in Sources */,
+				3B556C591A57DC5100DE807B /* ViewController.swift in Sources */,
+				3B556C7F1A57F0A400DE807B /* NetworkUtil.swift in Sources */,
+				3B556C8B1A5827C900DE807B /* SwiftyJSON.swift in Sources */,
+				3B556C911A58AD8400DE807B /* AllVideoCell.swift in Sources */,
+				3B556C891A57F8F900DE807B /* Reachability.m in Sources */,
+				3B556C7B1A57DFF300DE807B /* getVideoInfo.swift in Sources */,
+				3B556C7D1A57E39100DE807B /* Video.swift in Sources */,
+				3B556C571A57DC5100DE807B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B556C621A57DC5100DE807B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B556C6D1A57DC5100DE807B /* WatchSnowboardingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B556C681A57DC5100DE807B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B556C501A57DC5100DE807B /* WatchSnowboarding */;
+			targetProxy = 3B556C671A57DC5100DE807B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B2A64B11A594E330069905E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B2A64B21A594E330069905E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B556C5F1A57DC5100DE807B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B556C601A57DC5100DE807B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B556C6E1A57DC5100DE807B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B556C6F1A57DC5100DE807B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B556C711A57DC5100DE807B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = WatchSnowboarding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchSnowboarding/WatchSnowboarding-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B556C721A57DC5100DE807B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = WatchSnowboarding/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WatchSnowboarding/WatchSnowboarding-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		3B556C741A57DC5100DE807B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WatchSnowboardingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchSnowboarding.app/WatchSnowboarding";
+			};
+			name = Debug;
+		};
+		3B556C751A57DC5100DE807B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WatchSnowboardingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchSnowboarding.app/WatchSnowboarding";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B556C4C1A57DC5100DE807B /* Build configuration list for PBXProject "WatchSnowboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B556C6E1A57DC5100DE807B /* Debug */,
+				3B556C6F1A57DC5100DE807B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B556C701A57DC5100DE807B /* Build configuration list for PBXNativeTarget "WatchSnowboarding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B556C711A57DC5100DE807B /* Debug */,
+				3B556C721A57DC5100DE807B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B556C731A57DC5100DE807B /* Build configuration list for PBXNativeTarget "WatchSnowboardingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B556C741A57DC5100DE807B /* Debug */,
+				3B556C751A57DC5100DE807B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B556C491A57DC5100DE807B /* Project object */;
+}
