@@ -22,6 +22,12 @@ class AllMovieViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        var nav = self.navigationController?.navigationBar
+
+        nav?.tintColor = UIColor.whiteColor()
+        nav?.barTintColor = UIColor(red: 0, green: 0.75, blue: 1.0, alpha: 1.0)
+        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
         videos = video.getYoutubeVideoList("Snowboarding", maxResults: 20)
 
         // Uncomment the following line to preserve selection between presentations
@@ -128,17 +134,18 @@ class AllMovieViewController: UITableViewController {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
         if segue.identifier == "SelectVideo" {
-            println("check2")
             let cell = sender as UITableViewCell
             let indexPath = tableView.indexPathForCell(cell)
             selectedVideoIndex = indexPath?.row
             if let index = selectedVideoIndex {
                 selectedVideoID = videos[index]["id"] as NSString
             }
-            println(segue.destinationViewController)
-            let videoPickerViewController = segue.destinationViewController as VideoViewController
+            
+            /* refer this http://stackoverflow.com/questions/24554361/swift-exc-breakpoint-when-assigning-viewcontroller-to-variable-in-prepareforsegu
+            */
+            let videoNavigationController = segue.destinationViewController as UINavigationController
+            let videoPickerViewController = videoNavigationController.viewControllers[0] as VideoViewController
             videoPickerViewController.selectedVideoID = selectedVideoID
-            println("check4 : Work prepare")
         }
     }
 

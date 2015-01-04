@@ -19,7 +19,7 @@ public class Video {
         
         if NetworkUtil.hasConnectity() {
             let baseApiUrl:String = "https://www.googleapis.com/youtube/v3/search?part=snippet&q="
-            var apiUrl:String = baseApiUrl + keyword + "&maxResults=" + String(maxResults) + "&order=date&type=video&key=" + myKey
+            var apiUrl:String = baseApiUrl + keyword + "&maxResults=" + String(maxResults) + "&order=date&videoEmbeddable=true&videoSyndicated=true&type=video&key=" + myKey
             
             let listJson = jsonFromUrl(apiUrl)
             
