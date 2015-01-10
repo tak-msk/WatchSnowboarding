@@ -19,6 +19,9 @@ class AllMovieViewController: UITableViewController {
     
     var selectedVideoID:String? = nil
     var selectedVideoIndex:Int? = nil
+    
+    // Load GCD(Grand Central Dispatch) as a background process
+    var gcd = GCDLoader()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +31,7 @@ class AllMovieViewController: UITableViewController {
         nav?.barTintColor = UIColor(red: 0, green: 0.75, blue: 1.0, alpha: 1.0)
         nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
-        videos = video.getYoutubeVideoList("Snowboarding", maxResults: 20)
+        videos = video.getYoutubeVideoList("Snowboarding", maxResults: 10)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -126,7 +129,20 @@ class AllMovieViewController: UITableViewController {
         return true
     }
     */
-
+    
+    override func scrollViewDidScroll(scrollView: UIScrollView) {
+        if self.tableView.contentOffset.y >= self.tableView.contentSize.height - self.tableView.bounds.size.height {
+            // From SVProgressHUD Pods
+            SVProgressHUD.showWithStatus("Loading")
+            gcd.dispatch_async_main {
+                // add 10 videos more
+                self.videos += self.video.getYoutubeVideoList("Snowboarding", maxResults: 10)
+                SVProgressHUD.dismiss()
+            }
+            self.tableView.reloadData()
+        }
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

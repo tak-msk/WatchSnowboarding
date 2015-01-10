@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12FB95C3FA0842CAA2FF19C7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA9C887D7ED4702AE38F5EC /* libPods.a */; };
 		3B2A64A91A58E78C0069905E /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A64A81A58E78C0069905E /* VideoViewController.swift */; };
 		3B2A64AD1A5900210069905E /* ExYoutubeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A64AC1A5900210069905E /* ExYoutubeLoader.swift */; };
 		3B2A64B31A594E330069905E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A64B11A594E330069905E /* Main.storyboard */; };
+		3B2D85831A6162450076FEEF /* AllVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D85821A6162450076FEEF /* AllVideoCell.swift */; };
+		3B2D85851A6162D30076FEEF /* GCDLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D85841A6162D30076FEEF /* GCDLoader.swift */; };
 		3B556C571A57DC5100DE807B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C561A57DC5100DE807B /* AppDelegate.swift */; };
 		3B556C591A57DC5100DE807B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C581A57DC5100DE807B /* ViewController.swift */; };
 		3B556C5E1A57DC5100DE807B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B556C5D1A57DC5100DE807B /* Images.xcassets */; };
@@ -22,7 +25,6 @@
 		3B556C861A57F89D00DE807B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B556C851A57F89D00DE807B /* SystemConfiguration.framework */; };
 		3B556C891A57F8F900DE807B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C881A57F8F900DE807B /* Reachability.m */; };
 		3B556C8B1A5827C900DE807B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C8A1A5827C900DE807B /* SwiftyJSON.swift */; };
-		3B556C911A58AD8400DE807B /* AllVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C901A58AD8400DE807B /* AllVideoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		3B2A64A81A58E78C0069905E /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		3B2A64AC1A5900210069905E /* ExYoutubeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExYoutubeLoader.swift; sourceTree = "<group>"; };
 		3B2A64B21A594E330069905E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B2D85821A6162450076FEEF /* AllVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllVideoCell.swift; sourceTree = "<group>"; };
+		3B2D85841A6162D30076FEEF /* GCDLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDLoader.swift; sourceTree = "<group>"; };
 		3B556C511A57DC5100DE807B /* WatchSnowboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchSnowboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B556C551A57DC5100DE807B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B556C561A57DC5100DE807B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +61,8 @@
 		3B556C871A57F8F900DE807B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		3B556C881A57F8F900DE807B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		3B556C8A1A5827C900DE807B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		3B556C901A58AD8400DE807B /* AllVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllVideoCell.swift; path = ../AllVideoCell.swift; sourceTree = "<group>"; };
+		924C563861A44B39B443E7AE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EEA9C887D7ED4702AE38F5EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B556C861A57F89D00DE807B /* SystemConfiguration.framework in Frameworks */,
+				12FB95C3FA0842CAA2FF19C7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +101,8 @@
 				3B556C531A57DC5100DE807B /* WatchSnowboarding */,
 				3B556C691A57DC5100DE807B /* WatchSnowboardingTests */,
 				3B556C521A57DC5100DE807B /* Products */,
+				924C563861A44B39B443E7AE /* Pods.xcconfig */,
+				9344FB87E6874A1B9303E345 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +127,7 @@
 				3B556C7A1A57DFF300DE807B /* getVideoInfo.swift */,
 				3B556C7E1A57F0A400DE807B /* NetworkUtil.swift */,
 				3B556C8A1A5827C900DE807B /* SwiftyJSON.swift */,
+				3B2D85841A6162D30076FEEF /* GCDLoader.swift */,
 				3B556C811A57F16300DE807B /* WatchSnowboarding-Bridging-Header.h */,
 				3B2A64B11A594E330069905E /* Main.storyboard */,
 				3B556C5D1A57DC5100DE807B /* Images.xcassets */,
@@ -158,7 +167,7 @@
 			children = (
 				3B556C761A57DF9600DE807B /* AllMovieViewController.swift */,
 				3B556C7C1A57E39100DE807B /* Video.swift */,
-				3B556C901A58AD8400DE807B /* AllVideoCell.swift */,
+				3B2D85821A6162450076FEEF /* AllVideoCell.swift */,
 			);
 			name = AllMovieList;
 			sourceTree = "<group>";
@@ -179,6 +188,14 @@
 			name = Reachability;
 			sourceTree = "<group>";
 		};
+		9344FB87E6874A1B9303E345 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEA9C887D7ED4702AE38F5EC /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B556C701A57DC5100DE807B /* Build configuration list for PBXNativeTarget "WatchSnowboarding" */;
 			buildPhases = (
+				EDF8F3C01D8842B99901D74D /* Check Pods Manifest.lock */,
 				3B556C4D1A57DC5100DE807B /* Sources */,
 				3B556C4E1A57DC5100DE807B /* Frameworks */,
 				3B556C4F1A57DC5100DE807B /* Resources */,
+				6A3554451B5741B994D8D0DC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -274,18 +293,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6A3554451B5741B994D8D0DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF8F3C01D8842B99901D74D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B556C4D1A57DC5100DE807B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3B2A64A91A58E78C0069905E /* VideoViewController.swift in Sources */,
+				3B2D85831A6162450076FEEF /* AllVideoCell.swift in Sources */,
 				3B2A64AD1A5900210069905E /* ExYoutubeLoader.swift in Sources */,
+				3B2D85851A6162D30076FEEF /* GCDLoader.swift in Sources */,
 				3B556C771A57DF9600DE807B /* AllMovieViewController.swift in Sources */,
 				3B556C591A57DC5100DE807B /* ViewController.swift in Sources */,
 				3B556C7F1A57F0A400DE807B /* NetworkUtil.swift in Sources */,
 				3B556C8B1A5827C900DE807B /* SwiftyJSON.swift in Sources */,
-				3B556C911A58AD8400DE807B /* AllVideoCell.swift in Sources */,
 				3B556C891A57F8F900DE807B /* Reachability.m in Sources */,
 				3B556C7B1A57DFF300DE807B /* getVideoInfo.swift in Sources */,
 				3B556C7D1A57E39100DE807B /* Video.swift in Sources */,
@@ -410,6 +463,7 @@
 		};
 		3B556C711A57DC5100DE807B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924C563861A44B39B443E7AE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -423,6 +477,7 @@
 		};
 		3B556C721A57DC5100DE807B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 924C563861A44B39B443E7AE /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -11,7 +11,12 @@ import UIKit
 
 public class Video {
    
+    // key for youtube api
     var myKey = "AIzaSyDObTxjsbpjfmw0SvGr25n-rtRF_DdyCSM"
+    // GMT+9 = JST
+    let timeInterval:NSTimeInterval = 32400
+    // nextPageToken on Youtube
+    var nextPageToken:String = ""
     
     func getYoutubeVideoList(keyword: String, maxResults: Int) -> Array<Dictionary<String, AnyObject>> {
         
@@ -21,7 +26,20 @@ public class Video {
             let baseApiUrl:String = "https://www.googleapis.com/youtube/v3/search?part=snippet&q="
             var apiUrl:String = baseApiUrl + keyword + "&maxResults=" + String(maxResults) + "&order=date&videoEmbeddable=true&videoSyndicated=true&type=video&key=" + myKey
             
+            if self.nextPageToken != "" {
+                apiUrl = apiUrl + "&pageToken=" + self.nextPageToken
+            }
+
             let listJson = jsonFromUrl(apiUrl)
+            
+            // add nextPageToken if there is
+            if listJson["nextPageToken"].stringValue != "" {
+                self.nextPageToken = listJson["nextPageToken"].stringValue
+            } else {
+                self.nextPageToken = ""
+            }
+            
+            println("nextPageToken : " + self.nextPageToken)
             
             for var i=0; i<maxResults; i++ {
                 var video: Dictionary<String, AnyObject>! = Dictionary<String, AnyObject!>()
@@ -46,7 +64,8 @@ public class Video {
                 dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
                 
                 let dateString = listJson["items"][i]["snippet"]["publishedAt"].stringValue
-                video["publishedAt"] = dateFormatter.stringFromDate(dateFormatterYT.dateFromString(dateString)!)
+                let publishedDate = dateFormatterYT.dateFromString(dateString)!
+                video["publishedAt"] = dateFormatter.stringFromDate(NSDate(timeInterval: timeInterval, sinceDate: publishedDate))
                 
                 // thumbnail image
                 let imageUrl:String = listJson["items"][i]["snippet"]["thumbnails"]["high"]["url"].stringValue as String
