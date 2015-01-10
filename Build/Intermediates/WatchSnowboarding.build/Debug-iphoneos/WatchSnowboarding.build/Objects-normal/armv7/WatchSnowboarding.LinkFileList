@@ -1,4 +1,5 @@
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/VideoViewController.o
+/Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/AllBoaderCell.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/AllVideoCell.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/ExYoutubeLoader.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/GCDLoader.o
@@ -6,6 +7,8 @@
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/ViewController.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/NetworkUtil.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/SwiftyJSON.o
+/Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/Boader.o
+/Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/AllBoarderViewController.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/getVideoInfo.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/Video.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphoneos/WatchSnowboarding.build/Objects-normal/armv7/AppDelegate.o

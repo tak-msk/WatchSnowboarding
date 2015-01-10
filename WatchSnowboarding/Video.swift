@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class Video {
+class Video {
    
     // key for youtube api
     var myKey = "AIzaSyDObTxjsbpjfmw0SvGr25n-rtRF_DdyCSM"
@@ -38,8 +38,6 @@ public class Video {
             } else {
                 self.nextPageToken = ""
             }
-            
-            println("nextPageToken : " + self.nextPageToken)
             
             for var i=0; i<maxResults; i++ {
                 var video: Dictionary<String, AnyObject>! = Dictionary<String, AnyObject!>()

@@ -71,13 +71,40 @@ typedef struct _NSZone NSZone;
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class UIStoryboardSegue;
-@class UITableView;
-@class NSIndexPath;
-@class UITableViewCell;
-@class UIScrollView;
-@class NSBundle;
+@class UIImageView;
+@class UILabel;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC17WatchSnowboarding13AllBoaderCell")
+@interface AllBoaderCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * boaderImage;
+@property (nonatomic, weak) IBOutlet UILabel * boarderName;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (instancetype)initWithCoder:(NSCoder *)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC17WatchSnowboarding24AllBoarderViewController")
+@interface AllBoarderViewController : UITableViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+- (instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (instancetype)initWithCoder:(NSCoder *)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIStoryboardSegue;
+@class NSIndexPath;
+@class UIScrollView;
 
 SWIFT_CLASS("_TtC17WatchSnowboarding22AllMovieViewController")
 @interface AllMovieViewController : UITableViewController
@@ -97,8 +124,6 @@ SWIFT_CLASS("_TtC17WatchSnowboarding22AllMovieViewController")
 - (instancetype)initWithCoder:(NSCoder *)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
-@class UIImageView;
 
 SWIFT_CLASS("_TtC17WatchSnowboarding12AllVideoCell")
 @interface AllVideoCell : UITableViewCell
