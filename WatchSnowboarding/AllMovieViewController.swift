@@ -133,6 +133,7 @@ class AllMovieViewController: UITableViewController {
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         if self.tableView.contentOffset.y >= self.tableView.contentSize.height - self.tableView.bounds.size.height {
             // From SVProgressHUD Pods
+            SVProgressHUD.setBackgroundColor(UIColor.whiteColor().colorWithAlphaComponent(0.9))
             SVProgressHUD.showWithStatus("Loading")
             gcd.dispatch_async_main {
                 // add 10 videos more
