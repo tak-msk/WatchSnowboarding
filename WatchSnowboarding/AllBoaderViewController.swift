@@ -8,11 +8,26 @@
 
 import UIKit
 
-class AllBoarderViewController: UITableViewController {
+class AllBoaderViewController: UITableViewController {
+    
+    var boaders:[PFObject]! = [PFObject]()
+    var videoInfo = Video()
+    var boaderThumbnail = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        var nav = self.navigationController?.navigationBar
+        
+        nav?.tintColor = UIColor.whiteColor()
+        nav?.barTintColor = UIColor(red: 0, green: 0.75, blue: 1.0, alpha: 1.0)
+        nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        self.loadData { (boaders, error) -> () in
+            self.boaders = boaders
+            self.tableView.reloadData()
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,19 +45,21 @@ class AllBoarderViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return boaders.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BoarderCell", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCellWithIdentifier("BoaderCell", forIndexPath: indexPath) as AllBoaderCell
+     
+        if let boaderName = self.boaders[indexPath.row].objectForKey("name") as? NSString {
+            cell.boaderName.text = boaderName
+        }
 
         return cell
     }
@@ -91,5 +108,17 @@ class AllBoarderViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    func loadData(callback:([PFObject]!, NSError!) -> ())  {
+        var query: PFQuery = PFQuery(className: "Boaders")
+        query.orderByAscending("createdAt")
+        query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError!) -> Void in
+            if (error != nil){
+                // error message
+                println(error)
+            }
+            callback(objects as [PFObject], error)
+        }
+    }
 
 }

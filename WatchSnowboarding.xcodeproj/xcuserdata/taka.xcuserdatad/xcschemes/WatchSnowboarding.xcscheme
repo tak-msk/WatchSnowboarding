@@ -81,6 +81,23 @@
             ReferencedContainer = "container:WatchSnowboarding.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "ENV_PARSE_CLIENTKEY"
+            value = "VlnLGHlcseG7dPdot2zkT2xalvZdsP4OmGnebzoI"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "ENV_GGL_KEY"
+            value = "AIzaSyDObTxjsbpjfmw0SvGr25n-rtRF_DdyCSM"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "ENV_PARSE_APPID"
+            value = "Rmz2Wevgh89tujx164nWXJ0nZrUu3twyFdZooVLP"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

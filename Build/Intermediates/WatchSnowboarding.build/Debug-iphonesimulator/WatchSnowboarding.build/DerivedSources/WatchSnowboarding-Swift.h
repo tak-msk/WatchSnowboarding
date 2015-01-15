@@ -78,7 +78,7 @@ typedef struct _NSZone NSZone;
 SWIFT_CLASS("_TtC17WatchSnowboarding13AllBoaderCell")
 @interface AllBoaderCell : UITableViewCell
 @property (nonatomic, weak) IBOutlet UIImageView * boaderImage;
-@property (nonatomic, weak) IBOutlet UILabel * boarderName;
+@property (nonatomic, weak) IBOutlet UILabel * boaderName;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -87,17 +87,22 @@ SWIFT_CLASS("_TtC17WatchSnowboarding13AllBoaderCell")
 - (instancetype)initWithCoder:(NSCoder *)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PFObject;
 @class UITableView;
 @class NSIndexPath;
+@class NSError;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC17WatchSnowboarding24AllBoarderViewController")
-@interface AllBoarderViewController : UITableViewController
+SWIFT_CLASS("_TtC17WatchSnowboarding23AllBoaderViewController")
+@interface AllBoaderViewController : UITableViewController
+@property (nonatomic, copy) NSArray * boaders;
+@property (nonatomic, copy) NSString * boaderThumbnail;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (void)loadData:(void (^)(NSArray *, NSError *))callback;
 - (instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (instancetype)init OBJC_DESIGNATED_INITIALIZER;

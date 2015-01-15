@@ -11,7 +11,7 @@ import UIKit
 class AllBoaderCell: UITableViewCell {
 
     @IBOutlet weak var boaderImage: UIImageView!
-    @IBOutlet weak var boarderName: UILabel!
+    @IBOutlet weak var boaderName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

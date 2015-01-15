@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 class Video {
-   
-    // key for youtube api
-    var myKey = "AIzaSyDObTxjsbpjfmw0SvGr25n-rtRF_DdyCSM"
+    
     // GMT+9 = JST
     let timeInterval:NSTimeInterval = 32400
     // nextPageToken on Youtube
     var nextPageToken:String = ""
+    // Get Google API Key
+    var myKey:String = "AIzaSyDObTxjsbpjfmw0SvGr25n-rtRF_DdyCSM"
     
     func getYoutubeVideoList(keyword: String, maxResults: Int) -> Array<Dictionary<String, AnyObject>> {
         

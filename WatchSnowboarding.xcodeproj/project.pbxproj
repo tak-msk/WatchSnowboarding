@@ -13,7 +13,7 @@
 		3B2A64B31A594E330069905E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2A64B11A594E330069905E /* Main.storyboard */; };
 		3B2D85831A6162450076FEEF /* AllVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D85821A6162450076FEEF /* AllVideoCell.swift */; };
 		3B2D85851A6162D30076FEEF /* GCDLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D85841A6162D30076FEEF /* GCDLoader.swift */; };
-		3B2D858A1A6174860076FEEF /* AllBoarderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D85891A6174860076FEEF /* AllBoarderViewController.swift */; };
+		3B2D858A1A6174860076FEEF /* AllBoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D85891A6174860076FEEF /* AllBoaderViewController.swift */; };
 		3B2D858C1A61749D0076FEEF /* Boader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D858B1A61749D0076FEEF /* Boader.swift */; };
 		3B2D85901A61E74B0076FEEF /* AllBoaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2D858F1A61E74B0076FEEF /* AllBoaderCell.swift */; };
 		3B556C571A57DC5100DE807B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B556C561A57DC5100DE807B /* AppDelegate.swift */; };
@@ -45,7 +45,7 @@
 		3B2A64B21A594E330069905E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B2D85821A6162450076FEEF /* AllVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllVideoCell.swift; sourceTree = "<group>"; };
 		3B2D85841A6162D30076FEEF /* GCDLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDLoader.swift; sourceTree = "<group>"; };
-		3B2D85891A6174860076FEEF /* AllBoarderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllBoarderViewController.swift; sourceTree = "<group>"; };
+		3B2D85891A6174860076FEEF /* AllBoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllBoaderViewController.swift; sourceTree = "<group>"; };
 		3B2D858B1A61749D0076FEEF /* Boader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boader.swift; sourceTree = "<group>"; };
 		3B2D858F1A61E74B0076FEEF /* AllBoaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllBoaderCell.swift; sourceTree = "<group>"; };
 		3B556C511A57DC5100DE807B /* WatchSnowboarding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchSnowboarding.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +101,7 @@
 		3B2D85861A6173FB0076FEEF /* AllBoaderList */ = {
 			isa = PBXGroup;
 			children = (
-				3B2D85891A6174860076FEEF /* AllBoarderViewController.swift */,
+				3B2D85891A6174860076FEEF /* AllBoaderViewController.swift */,
 				3B2D858B1A61749D0076FEEF /* Boader.swift */,
 				3B2D858F1A61E74B0076FEEF /* AllBoaderCell.swift */,
 			);
@@ -355,7 +355,7 @@
 				3B556C7F1A57F0A400DE807B /* NetworkUtil.swift in Sources */,
 				3B556C8B1A5827C900DE807B /* SwiftyJSON.swift in Sources */,
 				3B2D858C1A61749D0076FEEF /* Boader.swift in Sources */,
-				3B2D858A1A6174860076FEEF /* AllBoarderViewController.swift in Sources */,
+				3B2D858A1A6174860076FEEF /* AllBoaderViewController.swift in Sources */,
 				3B556C891A57F8F900DE807B /* Reachability.m in Sources */,
 				3B556C7D1A57E39100DE807B /* Video.swift in Sources */,
 				3B556C571A57DC5100DE807B /* AppDelegate.swift in Sources */,
