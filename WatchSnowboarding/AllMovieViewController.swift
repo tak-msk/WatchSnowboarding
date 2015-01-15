@@ -22,15 +22,19 @@ class AllMovieViewController: UITableViewController {
     
     // Load GCD(Grand Central Dispatch) as a background process
     var gcd = GCDLoader()
+    
+//    // Get Google API Key for getting youtube video api - v3
+//    var env_key:AnyObject? = NSProcessInfo.processInfo().environment["ENV_GGL_KEY"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         var nav = self.navigationController?.navigationBar
 
         nav?.tintColor = UIColor.whiteColor()
         nav?.barTintColor = UIColor(red: 0, green: 0.75, blue: 1.0, alpha: 1.0)
         nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        
+
         videos = video.getYoutubeVideoList("Snowboarding", maxResults: 10)
 
         // Uncomment the following line to preserve selection between presentations

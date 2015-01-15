@@ -1,4 +1,5 @@
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/VideoViewController.o
+/Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/AllBoaderCell.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/AllVideoCell.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/ExYoutubeLoader.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/GCDLoader.o
@@ -6,7 +7,8 @@
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/ViewController.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/NetworkUtil.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/SwiftyJSON.o
-/Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/getVideoInfo.o
+/Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/Boader.o
+/Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/AllBoaderViewController.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/Video.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/AppDelegate.o
 /Users/taka/Desktop/Xcode/WatchSnowboarding/Build/Intermediates/WatchSnowboarding.build/Debug-iphonesimulator/WatchSnowboarding.build/Objects-normal/i386/Reachability.o
