@@ -15,10 +15,8 @@ class Video {
     let timeInterval:NSTimeInterval = 32400
     // nextPageToken on Youtube
     var nextPageToken:String = ""
-    // Get Google API Key
-    var myKey:String = "AIzaSyDObTxjsbpjfmw0SvGr25n-rtRF_DdyCSM"
     
-    func getYoutubeVideoList(keyword: String, maxResults: Int) -> Array<Dictionary<String, AnyObject>> {
+    func getYoutubeVideoList(keyword: String, maxResults: Int, myKey: String) -> Array<Dictionary<String, AnyObject>> {
         
         var videoList = [Dictionary<String, AnyObject>]()
         
@@ -51,7 +49,7 @@ class Video {
                 video["title"] = title
                 
                 // duration
-                var videoInfo:Dictionary<String, AnyObject> = getYoutubeVideoContentDetail(videoId)
+                var videoInfo:Dictionary<String, AnyObject> = getYoutubeVideoContentDetail(videoId, myKey: myKey)
                 video["duration"] = videoInfo["duration"]
                 
                 // published at
@@ -81,7 +79,7 @@ class Video {
         return videoList
     }
     
-    func getYoutubeVideoContentDetail(id: String) -> Dictionary<String, AnyObject> {
+    func getYoutubeVideoContentDetail(id: String, myKey: String) -> Dictionary<String, AnyObject> {
         var videoInfo = Dictionary<String, AnyObject>()
         
         let baseUrl:String = "https://www.googleapis.com/youtube/v3/videos?id="

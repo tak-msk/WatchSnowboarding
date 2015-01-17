@@ -117,6 +117,7 @@ SWIFT_CLASS("_TtC17WatchSnowboarding22AllMovieViewController")
 - (IBAction)closeVideoScene:(UIStoryboardSegue *)segue;
 @property (nonatomic, copy) NSArray * videos;
 @property (nonatomic, copy) NSString * selectedVideoID;
+@property (nonatomic, copy) NSString * env_key;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
