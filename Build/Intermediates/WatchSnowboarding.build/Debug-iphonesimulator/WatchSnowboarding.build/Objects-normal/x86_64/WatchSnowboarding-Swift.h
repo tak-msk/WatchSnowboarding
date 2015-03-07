@@ -96,6 +96,7 @@ SWIFT_CLASS("_TtC17WatchSnowboarding13AllBoaderCell")
 SWIFT_CLASS("_TtC17WatchSnowboarding23AllBoaderViewController")
 @interface AllBoaderViewController : UITableViewController
 @property (nonatomic, copy) NSArray * boaders;
+@property (nonatomic, copy) NSString * boaderThumbnail;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;

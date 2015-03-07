@@ -22,9 +22,6 @@ class AllMovieViewController: UITableViewController {
     
     // Load GCD(Grand Central Dispatch) as a background process
     var gcd = GCDLoader()
-    
-    // Get Google API Key for getting youtube video api - v3
-    var env_key:String = NSProcessInfo.processInfo().environment["ENV_GGL_KEY"] as String
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +32,7 @@ class AllMovieViewController: UITableViewController {
         nav?.barTintColor = UIColor(red: 0, green: 0.75, blue: 1.0, alpha: 1.0)
         nav?.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
 
-        videos = video.getYoutubeVideoList("Snowboarding", maxResults: 10, myKey: self.env_key)
+        videos = video.getYoutubeVideoList("Snowboarding", maxResults: 10)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -141,7 +138,7 @@ class AllMovieViewController: UITableViewController {
             SVProgressHUD.showWithStatus("Loading")
             gcd.dispatch_async_main {
                 // add 10 videos more
-                self.videos += self.video.getYoutubeVideoList("Snowboarding", maxResults: 10, myKey: self.env_key)
+                self.videos += self.video.getYoutubeVideoList("Snowboarding", maxResults: 10)
                 SVProgressHUD.dismiss()
             }
             self.tableView.reloadData()

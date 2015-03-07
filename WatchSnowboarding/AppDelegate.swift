@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        var parse_id:String = NSProcessInfo.processInfo().environment["ENV_PARSE_APPID"] as String
-        var parse_key:String = NSProcessInfo.processInfo().environment["ENV_PARSE_CLIENTKEY"] as String
+        var parse_id:String = "Rmz2Wevgh89tujx164nWXJ0nZrUu3twyFdZooVLP"//NSProcessInfo.processInfo().environment["ENV_PARSE_APPID"] as String
+        var parse_key:String = "VlnLGHlcseG7dPdot2zkT2xalvZdsP4OmGnebzoI"//NSProcessInfo.processInfo().environment["ENV_PARSE_CLIENTKEY"] as String
         
         // MARK: - Parse
         Parse.setApplicationId(parse_id, clientKey: parse_key)

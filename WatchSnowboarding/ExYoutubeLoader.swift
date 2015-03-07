@@ -16,7 +16,7 @@ extension UIWebView {
         self.scrollView.bounces = false
         
         
-        var htmlString:String = "<!DOCTYPE html><head><meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no, width=\"\(self.frame.width)\"></head><body style=\"background:#000000; margin-top:0px; margin-left:0px\"><iframe width=\"\(self.frame.width)\" height=\"\(self.frame.height)\" src=\"https://www.youtube.com/embed/\(videoID)?showinfo=0\" frameborder=\"0\" allowfullscreen></iframe></body></html>"
+        var htmlString:String = "<!DOCTYPE html><head><meta name=\"viewport\" content=\"initial-scale=1.0, user-scalable=no, width=\"\(self.frame.width)\"></head><body style=\"background:#000000; margin-top:150px; margin-left:0px; margin-right:0px;\"><iframe width=\"\(self.frame.width)\" src=\"https://www.youtube.com/embed/\(videoID)?showinfo=0\" frameborder=\"0\" autoplay=\"autoplay\" allowfullscreen></iframe></body></html>"
         
         println(htmlString)
         

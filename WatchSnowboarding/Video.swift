@@ -13,10 +13,12 @@ class Video {
     
     // GMT+9 = JST
     let timeInterval:NSTimeInterval = 32400
+    // Get Google API Key for getting youtube video api - v3
+    var myKey:String = "AIzaSyDObTxjsbpjfmw0SvGr25n-rtRF_DdyCSM" //NSProcessInfo.processInfo().environment["ENV_GGL_KEY"] as String
     // nextPageToken on Youtube
     var nextPageToken:String = ""
     
-    func getYoutubeVideoList(keyword: String, maxResults: Int, myKey: String) -> Array<Dictionary<String, AnyObject>> {
+    func getYoutubeVideoList(keyword: String, maxResults: Int) -> Array<Dictionary<String, AnyObject>> {
         
         var videoList = [Dictionary<String, AnyObject>]()
         
@@ -49,7 +51,7 @@ class Video {
                 video["title"] = title
                 
                 // duration
-                var videoInfo:Dictionary<String, AnyObject> = getYoutubeVideoContentDetail(videoId, myKey: myKey)
+                var videoInfo:Dictionary<String, AnyObject> = getYoutubeVideoContentDetail(videoId)
                 video["duration"] = videoInfo["duration"]
                 
                 // published at
@@ -79,7 +81,7 @@ class Video {
         return videoList
     }
     
-    func getYoutubeVideoContentDetail(id: String, myKey: String) -> Dictionary<String, AnyObject> {
+    func getYoutubeVideoContentDetail(id: String) -> Dictionary<String, AnyObject> {
         var videoInfo = Dictionary<String, AnyObject>()
         
         let baseUrl:String = "https://www.googleapis.com/youtube/v3/videos?id="
@@ -126,7 +128,7 @@ class Video {
     func jsonFromUrl(apiUrl: String) -> JSON {
         var requestUrl:NSURL = NSURL(string: apiUrl)!
         var request:NSURLRequest = NSURLRequest(URL: requestUrl)
-        
+
         // request to api
         var data:NSData = NSURLConnection.sendSynchronousRequest(request, returningResponse: nil, error: NSErrorPointer())!
         
