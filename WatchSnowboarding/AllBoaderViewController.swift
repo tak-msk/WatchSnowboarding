@@ -57,8 +57,18 @@ class AllBoaderViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("BoaderCell", forIndexPath: indexPath) as AllBoaderCell
      
+        // boader's name
         if let boaderName = self.boaders[indexPath.row].objectForKey("name") as? NSString {
             cell.boaderName.text = boaderName
+        }
+        
+        // boader's image
+        if var imageUrl:String = self.boaders[indexPath.row].objectForKey("image") as? String {
+            let boaderImage:NSURLRequest = NSURLRequest(URL:NSURL(string: imageUrl)!)
+            NSURLConnection.sendAsynchronousRequest(boaderImage, queue:NSOperationQueue.mainQueue()){(res, data, err) in
+                let image = UIImage(data:data)
+                cell.boaderImage.image = image
+            }
         }
 
         return cell
