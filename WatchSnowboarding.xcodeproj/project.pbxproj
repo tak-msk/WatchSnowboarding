@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37E201F1F69EB722452A07C5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3B2A64A81A58E78C0069905E /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		3B2A64AC1A5900210069905E /* ExYoutubeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExYoutubeLoader.swift; sourceTree = "<group>"; };
 		3B2A64B21A594E330069905E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,7 +66,7 @@
 		3B556C871A57F8F900DE807B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		3B556C881A57F8F900DE807B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		3B556C8A1A5827C900DE807B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		924C563861A44B39B443E7AE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		84554BAEC1EDF7022A85B22E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EEA9C887D7ED4702AE38F5EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EBA9E5659CA80653C8B5E36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37E201F1F69EB722452A07C5 /* Pods.debug.xcconfig */,
+				84554BAEC1EDF7022A85B22E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3B2A64AE1A5900B40069905E /* VideoView */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +125,8 @@
 				3B556C531A57DC5100DE807B /* WatchSnowboarding */,
 				3B556C691A57DC5100DE807B /* WatchSnowboardingTests */,
 				3B556C521A57DC5100DE807B /* Products */,
-				924C563861A44B39B443E7AE /* Pods.xcconfig */,
 				9344FB87E6874A1B9303E345 /* Frameworks */,
+				0EBA9E5659CA80653C8B5E36 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -320,7 +330,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EDF8F3C01D8842B99901D74D /* Check Pods Manifest.lock */ = {
@@ -479,7 +489,7 @@
 		};
 		3B556C711A57DC5100DE807B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 924C563861A44B39B443E7AE /* Pods.xcconfig */;
+			baseConfigurationReference = 37E201F1F69EB722452A07C5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -493,7 +503,7 @@
 		};
 		3B556C721A57DC5100DE807B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 924C563861A44B39B443E7AE /* Pods.xcconfig */;
+			baseConfigurationReference = 84554BAEC1EDF7022A85B22E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
