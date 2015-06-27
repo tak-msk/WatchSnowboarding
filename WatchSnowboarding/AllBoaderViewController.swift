@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class AllBoaderViewController: UITableViewController {
     
@@ -55,11 +56,11 @@ class AllBoaderViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("BoaderCell", forIndexPath: indexPath) as AllBoaderCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("BoaderCell", forIndexPath: indexPath) as! AllBoaderCell
      
         // boader's name
         if let boaderName = self.boaders[indexPath.row].objectForKey("name") as? NSString {
-            cell.boaderName.text = boaderName
+            cell.boaderName.text = boaderName as String
         }
         
         // boader's image
@@ -122,12 +123,12 @@ class AllBoaderViewController: UITableViewController {
     func loadData(callback:([PFObject]!, NSError!) -> ())  {
         var query: PFQuery = PFQuery(className: "Boaders")
         query.orderByAscending("createdAt")
-        query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError!) -> Void in
+        query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]?, error: NSError?) -> Void in
             if (error != nil){
                 // error message
                 println(error)
             }
-            callback(objects as [PFObject], error)
+            callback(objects as! [PFObject], error)
         }
     }
 

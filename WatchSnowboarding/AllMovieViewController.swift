@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class AllMovieViewController: UITableViewController {
     
@@ -62,24 +63,24 @@ class AllMovieViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("VideoCell", forIndexPath: indexPath) as AllVideoCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("VideoCell", forIndexPath: indexPath) as! AllVideoCell
 
         if let videoTitle = videos[indexPath.row]["title"] as? NSString {
-            cell.videoTitle.text = videoTitle
+            cell.videoTitle.text = videoTitle as String
         }
         
         if let videoDuration = videos[indexPath.row]["duration"] as? NSString {
-            cell.videoDuration.text = videoDuration
+            cell.videoDuration.text = videoDuration as String
         } else {
             cell.videoDuration.text = "Private Video"
         }
         
         if let videoPublished = videos[indexPath.row]["publishedAt"] as? NSString {
-            cell.videoPublished.text = videoPublished
+            cell.videoPublished.text = videoPublished as String
         }
         
         // AsynchronousRequest for thumbnail images
-        var imageReq:NSURLRequest = videos[indexPath.row]["imageUrlRequest"] as NSURLRequest
+        var imageReq:NSURLRequest = videos[indexPath.row]["imageUrlRequest"] as! NSURLRequest
         NSURLConnection.sendAsynchronousRequest(imageReq, queue:NSOperationQueue.mainQueue()){(res, data, err) in
             let image = UIImage(data:data)
             cell.videoImage.image = image
@@ -152,17 +153,17 @@ class AllMovieViewController: UITableViewController {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
         if segue.identifier == "SelectVideo" {
-            let cell = sender as UITableViewCell
+            let cell = sender as! UITableViewCell
             let indexPath = tableView.indexPathForCell(cell)
             selectedVideoIndex = indexPath?.row
             if let index = selectedVideoIndex {
-                selectedVideoID = videos[index]["id"] as NSString
+                selectedVideoID = videos[index]["id"] as! NSString as String
             }
             
             /* refer this http://stackoverflow.com/questions/24554361/swift-exc-breakpoint-when-assigning-viewcontroller-to-variable-in-prepareforsegu
             */
-            let videoNavigationController = segue.destinationViewController as UINavigationController
-            let videoPickerViewController = videoNavigationController.viewControllers[0] as VideoViewController
+            let videoNavigationController = segue.destinationViewController as! UINavigationController
+            let videoPickerViewController = videoNavigationController.viewControllers[0] as! VideoViewController
             videoPickerViewController.selectedVideoID = selectedVideoID
         }
     }
