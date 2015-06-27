@@ -3,5 +3,5 @@
 //
 
 #import "Reachability.h"
-#import "SVProgressHUD.h"
-#import "Parse.h"
+#import <SVProgressHUD/SVProgressHUD.h>
+#import <Parse/Parse.h>
